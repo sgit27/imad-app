@@ -1,6 +1,7 @@
 // code for counter
 
 var button = document.getElementById("counter");
+window.alert("I am here");
 var buttonCounter = 0;
 button.onclick = function() {
     buttonCounter = buttonCounter + 1;
