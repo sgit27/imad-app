@@ -5,7 +5,7 @@ window.alert("I am here");
 var buttonCounter = 0;
 button.onclick = function() {
     buttonCounter = buttonCounter + 1;
-    window.alert("I am here clicking button " + buttonCounter.toString());
+    alert("I am here clicking button " + buttonCounter.toString());
     var span = document.getElementById("count");
     span.innerHTML = buttonCounter.tostring();
 }
