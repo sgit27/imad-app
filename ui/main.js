@@ -16,6 +16,6 @@ request.onreadystatechange = function() {
 };
 // make the request
 request.open("GET", "http://vpsarav.imad.hasura-app.io/counter", true);
-request.send();
+request.send(null);
 };
 
