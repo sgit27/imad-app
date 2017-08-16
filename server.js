@@ -22,7 +22,8 @@ app.get('/ThirdPage', function (req, res) {
 });
 
 app.get('/main.js', function(req, res){
-    res.sendFile(path.join(_dirname, 'ui', 'main.js'));
+    res.send('Main.js will be displayed here');
+    //res.sendFile(path.join(_dirname, 'ui', 'main.js'));
 });
 
 var counter = 0;
