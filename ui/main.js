@@ -12,12 +12,12 @@ request.onreadystatechange = function() {
         var counter = request.responseText;
         var span = document.getElementById('count');
         span.innerHTML = counter.toString();
-        alert("I am done with the request to get the counter end point data");
+        //alert("I am done with the request to get the counter end point data");
     }
 };
 // make the request
 request.open('GET', 'http://vpsarav.imad.hasura-app.io/counter', true);
 request.send(null);
-alert("I have clicked the button");
+//alert("I have clicked the button");
 };
 
