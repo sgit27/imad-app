@@ -10,15 +10,15 @@ app.get('/', function (req, res) {
 });
 
 app.get('/FirstPage', function (req, res) {
-  res.sendFile(path.join(__dirname, 'ui', 'FirstPage.html'));
+  res.send('First page will be displayed here');
 });
 
 app.get('/SecondPage', function (req, res) {
-  res.sendFile(path.join(__dirname, 'ui', 'SecondPage.html'));
+  res.send('Second page will be displayed here');
 });
 
 app.get('/ThirdPage', function (req, res) {
-  res.sendFile(path.join(__dirname, 'ui', 'ThirdPage.html'));
+  res.send('ThirdPage will be displayed here');
 });
 
 
