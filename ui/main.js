@@ -11,11 +11,12 @@ request.onreadystatechange = function() {
     if(this.readystate===4 && this.status === 200){
         var buttonCounter = reqeust.responseText;
         var span = document.getElementById('count');
-        span.innerHTML = buttonCounter.toString();
+        span.innerHTML = buttonCounter;
     }
 };
 // make the request
-request.open("GET", "http://vpsarav.imad.hasura-app.io/counter", true);
+request.open('GET', 'http://vpsarav.imad.hasura-app.io/counter', true);
 request.send(null);
+alert("I have clicked the button");
 };
 
