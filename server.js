@@ -14,7 +14,7 @@ app.get('/FirstPage.html', function (req, res) {
 });
 
 app.get('/SecondPage', function (req, res) {
-  res.send('Second page will be displayed here');
+  res.sendFile(path.join(__dirname,'ui', SecondPage.html));
 });
 
 app.get('/ThirdPage', function (req, res) {
