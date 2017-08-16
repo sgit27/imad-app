@@ -6,7 +6,7 @@ button.onclick = function() {
     buttonCounter = buttonCounter + 1;
     alert("I am here clicking button " + buttonCounter.toString());
     var span = document.getElementById('count');
-    span.innerHTML = buttonCounter.tostring();
+    span.innerHTML = buttonCounter.toString();
     alert(span.innerHTML);
     alert("I am here after span");
     //alert(span.id);
