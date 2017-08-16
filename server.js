@@ -48,7 +48,7 @@ app.get('/ui/elephant.png', function (req, res) {
 });
 
 
-app.get('/FirstPage', function (req, res) {
+app.get('/ui/FirstPage', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'FirstPage.html'));
 });
 
