@@ -21,6 +21,10 @@ app.get('/ThirdPage', function (req, res) {
   res.send('ThirdPage will be displayed here');
 });
 
+app.get('/main.js', function(req, res){
+    res.sendFile(path.join(_dirname, 'ui', 'main.js'));
+});
+
 var counter = 0;
 app.get('/counter', function(req,res){
     counter = counter + 1;
