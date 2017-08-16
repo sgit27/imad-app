@@ -21,7 +21,7 @@ app.get('/ThirdPage', function (req, res) {
   res.send('ThirdPage will be displayed here');
 });
 
-app.get('/main.js', function(req, res){
+app.get('/ui/main.js', function(req, res){
     //res.send('Main.js will be displayed here');
     res.sendFile(path.join(__dirname, 'ui', 'main.js'));
 });
